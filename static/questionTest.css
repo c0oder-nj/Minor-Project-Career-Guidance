@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: #ceb6b642;
+}
+
+.options{
+    padding: 0 0 0 15px;
+}
+
+.Myform{
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  background-color: #b1d8eb;
+}
+
+.qna{
+  background-color: #b1d8eb;
+}
+
+.button{
+  padding-left: 48%;
+  background-color: #ece9e942;
+}
+
+.button input{
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.button input:hover{
+  cursor: pointer;
+  background-color: blue;
+  color: black;
+}

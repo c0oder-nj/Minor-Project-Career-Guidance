@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://kit.fontawesome.com/ae5ad958f6.js" crossorigin="anonymous"></script>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'afterLogin.css' %}">
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> 
+        <img  class="clogo"src="../static/G.jpg">
+        <i class="career logo"></i> Career Guidance </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">About</a>
+        <a href="#blogs">blogs</a>
+        <a href="#products">Features</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">review</a>
+        
+        
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <span id="login">
+        {% comment %} <div class="fas fa" ><a href="minor_login.html" id="login">Log in</a></div></span>
+        <div class="fas fa" ><a href="minor_register.html"id="register">Register</a></div> {% endcomment %}
+        
+        <div class="fas fa-user" id="login-btn">
+            <span id="dropdown_menu">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>Edit Profile</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>Settings </a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i>Help & Support</a></li>
+                    <li><a href="/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                    
+                </ul>
+            </span>
+
+        </div>
+    </div>
+
+    
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>CHOOSE <span>YOUR </span>CAREER</h3>
+        <p>The main objective of our system is to provide right guidance to the students by recommending the appropriate career.</p>
+        <a href="#" ><button id="taketest" class="btn btn-light" style="color: rgb(152, 130, 130);" onclick="myFunction()">Take Test</button></a>
+        <div id="myBtn" style="display: none;">
+            <a href="10th" class="btn">After 10th</a>
+            <a href="12th" class="btn">After 12th</a>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(){
+            document.getElementById("myBtn").style.display = "Block";
+        }
+    </script>
+
+</section>
+
+<div class="mainbody">
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+   
+
+
+    <h1 class="heading"><span>About</span> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>Our Work</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>Career Councelling</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>Career Discovery</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/08/23163747/Psychometric-Test.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 28 Sep. 2022 </a>
+                </div>
+                <h3>Career Discovery</h3>
+                <p>Today's student experiences numerous problems when it comes to deciding on a career path, because career options are so diverse, and new businesses such as social media, artificial intelligence, and data science have emerged in recent years.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://www.gradjobs.co.uk/documents/blog/learninggj-6646.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 28 Sep. 2022 </a>
+                </div>
+                <h3>Join Us</h3>
+                <p>Our quest is to constantly push the boundaries of social work and be a beacon for societal growth and awareness. We are involved at various levels for tackling different issues that the nation faces today. Wherein, education and digital security are our top priorities.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://www.careeraddict.com/uploads/article/60577/psychometric-test-sample-questions.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 28 Sep. 2022 </a>
+                </div>
+                <h3>Psychometric Tests</h3>
+                <p>A psychometric test is any activity or assessment that is conducted in order to evaluate a candidate performance and includes, but is not limited to, skills, knowledge, abilities, personality traits, attitudes and job/academic potential.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"><span>Features</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+ 
+            <div class="swiper-slide box" id="feature1" >
+                <img src=# alt="">
+                <h3 style="color:white;">college recommendations </h3>
+                <div class="price">--- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+                <a href="#" class="btn"style="color:white;">Read More</a>
+            </div>
+
+            
+
+            
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box" id="feature2">
+                <img src="image/product-5.png" alt="">
+                <h3 style="color:white;">Entrance Exam Recommendations</h3>
+                <div class="price">--- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn" style="color:white;">Read More</a>
+            </div>         
+
+            
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading">  <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.png" alt="">
+            <h3>9<sup>th</sup>Class</h3>
+            <p>student</p>
+            <a href="#" id="btnc">Register Now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.png" alt="">
+             <h3>10<sup>th</sup>Class</h3>
+            <p>student</p>
+            <a href="#" id="btnc">Register Now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-3.png" alt="">
+             <h3>11<sup>th</sup>Class</h3>
+            <p>student</p>
+            <a href="#" id="btnc">Register Now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-4.png" alt="">
+             <h3>12<sup>th</sup>Class</h3>
+            <p>student</p>
+            <a href="#" id="btnc">Register Now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"><span>reviews</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShHMBkzkLx6zhgPT_O8a7KpWZucB67N337mDCDMsXC09yMIUpYihxhQiHVc0PstSa6T5g&usqp=CAU" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                <h3>Nothing yet</h3>
+                <div class="stars">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+
+                    
+                    
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+    
+
+</section>
+
+<!-- review section ends -->
+
+
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>  <img src='G.png' height="30rem"> Career Guidance</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> mitasingh20129@acropolis.in </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> indore, india - 452010 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> objective </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn" style="color:purple; background:white;">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <!--<div class="credit"> created by <span> mr. web designer </span> | all rights reserved </div>
+-->
+</section>
+</div>
+<!-- footer section ends -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

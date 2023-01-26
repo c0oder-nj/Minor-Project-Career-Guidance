@@ -1,0 +1,149 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>register</title>
+  
+  
+  <!-- css for alert dismissible -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  {% load static %}
+  <link href="{% static 'minor_register.css' %}" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="msg">
+    <!-- <p>this is my messages area</p> -->
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 msg" role="alert">
+      <strong style="color: White;">{{ message }}</strong>
+      <button type="button" class="btn btn-light btn-close btn-outline-primary msg" data-bs-dismiss="alert" aria-label="Close">
+      </button>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+  <!-- Body of Form starts -->
+  <div class="container">
+    
+    <form method="post" autocomplete="on" action='/register'>
+      {% csrf_token %}
+      <!--First name-->
+      <div class="box">
+        <label for="firstName" class="fl fontLabel"> First Name: </label>
+        <div class="new iconBox">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div class="fr">
+          <input type="text" name="firstName" placeholder="First Name" class="textBox" autofocus="on" required>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--First name-->
+
+
+      <!--Second name-->
+      <div class="box">
+        <label for="LastName" class="fl fontLabel">Last Name: </label>
+        <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="text" required name="lastName" placeholder="Last Name" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--Second name-->
+
+
+      <!---Phone No.------>
+      <div class="box">
+        <label for="phone" class="fl fontLabel"> Phone No.: </label>
+        <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="text" required name="phone" maxlength="10" placeholder="Phone No." class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!---Phone No.---->
+
+      <!---Username ------>
+      <div class="box">
+        <label for="username" class="fl fontLabel"> Username: </label>
+        <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="text" required name="username" maxlength="10" placeholder="Username." class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!---Username ---->
+
+
+      <!---Email ID---->
+      <div class="box">
+        <label for="email" class="fl fontLabel"> Email ID: </label>
+        <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="email" required name="email" placeholder="Email Id" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--Email ID----->
+
+
+      <!---Password------>
+      <div class="box">
+        <label for="password" class="fl fontLabel"> Password </label>
+        <div class="fl iconBox"><i class="fa fa-key" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="Password" required name="pass1" placeholder="Password" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!---Password---->
+
+      <!---Password------>
+      <div class="box">
+        <label for="password" class="fl fontLabel"> Password </label>
+        <div class="fl iconBox"><i class="fa fa-key" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="Password" required id='pass2' name="pass2" placeholder="Password" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!---Password---->
+
+      <!---Gender----->
+      <div class="box radio">
+        <label for="gender" class="fl fontLabel"> Gender: </label>
+        <input type="radio" name="Gender" value="Male" required> Male &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="Gender" value="Female" required> Female
+      </div>
+      <!---Gender--->
+
+
+      <!--Terms and Conditions------>
+      <div class="box terms">
+        <input type="checkbox" name="Terms" required> &nbsp; I accept the terms and conditions
+      </div>
+      <!--Terms and Conditions------>
+
+
+
+      <!---Submit Button------>
+      <div class="box" style="background:#666;">
+        <input type="Submit" name="Submit" class="submit" value="SUBMIT">
+      </div>
+      <!---Submit Button----->
+    </form>
+  </div>
+  <!--Body of Form ends--->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+   background: url('https://wallpaperaccess.com/full/629769.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+	z-index: -1;
+    background-opacity:5 ;
+
+}
+
+.container{
+	background: white;
+    width: 450px;
+    height: 546px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 70px 50px 20px 50px;
+    border-radius: 20px;
+}
+
+
+.fl{
+	float: left;
+  width: 110px;
+  line-height: 35px;
+
+}
+
+.fontLabel{
+  color: rgb(17,10,64);
+  font-size: 13.5px;
+  font-family: Poppins, sans-serif;
+}
+
+.fr{
+	float: right;
+}
+
+.clr{
+	clear: both;
+}
+
+.box{
+	width: 360px;
+	height: 35px;
+	margin-top: 10px;
+	font-family: verdana;
+	font-size: 12px;
+}
+
+.textBox{
+	height: 35px;
+	width: 190px;
+  padding-left: 35px;
+  border: 1px rgb(14,3,20) solid;
+
+
+}
+
+.new{
+  float: left;
+}
+
+
+.radio{
+	margin-top: 35px;
+	color: white;
+	background: rgb(14,3,20);
+	line-height: 38px;
+
+}
+
+.terms{
+	line-height: 35px;
+	text-align: center;
+	background: rgb(14,3,20);
+	color: white;
+}
+
+.submit{
+	float: right;
+	border: none;
+	color: white;
+	width: 110px;
+	height: 35px;
+	background: rgb(14,3,20);
+	text-transform: uppercase;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+}
+
+.msg{
+	color: white;
+}
+
+.btn{
+	/* color: white; */
+	background-color: white;
+}
